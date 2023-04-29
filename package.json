@@ -4,9 +4,11 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
+    "build": "node.ts",
     "test": "jest",
     "start": "tsc && node dist/app.js",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "deploy": "https://github.com/Pdog108/HenHacksRepo.git"
   },
   "keywords": [],
   "author": "",
