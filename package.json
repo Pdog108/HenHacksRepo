@@ -4,11 +4,10 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "build": "src/app.ts",
-    "test": "jest",
-    "start": "tsc && node dist/app.js",
+    "build": "tsc && node dist/app.js",
     "lint": "eslint . --ext .ts",
-    "deploy": "https://github.com/Pdog108/HenHacksRepo.git"
+    "test": "jest",
+    "deploy": "https://github.com/Pdog108/pdog.108.github.io.git"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +17,6 @@
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
     "eslint": "^8.39.0",
-    "jest": "^29.5.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
