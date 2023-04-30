@@ -8,7 +8,7 @@ const fs = require('fs');
 const hostname = '127.0.0.1';
 
 const server = http.createServer((req, res) => {
-  fs.readFile('public/index.html', (err, data) => {
+  fs.readFile('docs/index.html', (err, data) => {
     if (err) {
       res.statusCode = 500;
       res.setHeader('Content-Type', 'text/plain');
