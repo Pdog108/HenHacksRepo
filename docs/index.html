@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Page</title>
     <style>
+        header {
+            text-align: center;
+            background: #FFD200;
+        }
+
       .dropdown {
         position: relative;
         display: inline-block;
@@ -69,10 +74,41 @@
         background-color: transparent;
         border: none;
       }
+
+      .recs {
+        border: #333;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: white;
+      }
     </style>
   </head>
-  <body class = "p-4">
-    <h1>Blue Hen Financial Advisor</h1>
+  <body class = "p-4" style="background-color: #ffeb78ce;">
+    <header>
+        <h1 style="color: #00539F; text-align: center;">Blue Hen Financial Advisor</h1>
+        <p style="text-align: center;">We are here to give assistance to those with financial questions in the Delaware area.</p>
+        <div class="topnav justify-content-around">
+            <a href="./index.html">Home</a>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resources
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item text-dark" href="https://www.usa.gov/benefits">Government Benefits</a>
+                    <a class="dropdown-item text-dark" href="https://www.nerdwallet.com">NerdWallet</a>
+                    <a class="dropdown-item text-dark" href="https://www.creditkarma.com">Credit Karma</a>
+                 </div>
+            </div>
+            <a href="#contact">Contact</a>
+            <a href="./aboutus.html">About Us</a>
+          </div>
+    </header>
     <style>
       #BlueHenLogo{
         position: absolute;
@@ -81,22 +117,31 @@
       }
     </style>
     <img id="BlueHenLogo" src="https://1000logos.net/wp-content/uploads/2022/01/Delaware-Blue-Hens-Logo-2009.png" style="width: 10%" >
-    <p>We are here to give assistance to those with financial questions in the Delaware area.</p>
-    <div class="topnav justify-content-around">
-      <a href="./index.html">Home</a>
-      <div class="dropdown">
-        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Articles
-          </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item text-dark" href="https://www.zayzoon.com/blog/alternatives-to-payday-loans-no-credit-check">Link 1</a>
-          <a class="dropdown-item text-dark" href= https://www.theguardian.com/us-news/2018/mar/05/fringe-banking-industry-more-likely-to-rate-health-as-poor-report-says">Link 2</a>
-          <a class="dropdown-item text-dark" href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="#contact">Contact</a>
-      <a href="./aboutus.html">About Us</a>
-    </div>
+
+    <h2 style="text-align: center">Our Recommendations</h2>
+
+    <table class="recs">
+        <tr>
+            <th>
+                <a href="https://sdl365.org">
+                    <img alt="Same Day Loans Delaware" src="https://sdl365.org/wp-content/themes/SDL365/images/sdl365-icon-logo.svg" style="width: 20%;">
+                </a>
+            </th>
+            <th>
+                <a href="https://www.onemainfinancial.com/?v=b">
+                    <img alt="One Main Financial" src="https://cdn.onemain.co/assets/logo-stacked-82fb1460a8cd2b907f7b0792056a237060cd9967baa2802bc3e556ac6083abf8.svg" style="width: 50%;">
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>Rating: * * * * *</p>
+            </td>
+            <td>
+                <p>Rating: * * * *</p>
+            </td>
+        </tr>
+    </table>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

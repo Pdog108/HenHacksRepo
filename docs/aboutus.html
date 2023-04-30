@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>About Us - Blue Hen Financial Advisor</title>
+    <style>
+      header {
+            text-align: center;
+            background: #FFD200;
+        }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+      }
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        vertical-align: middle;
+      }
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Add an active class to highlight the current page */
+      .active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      /* Increase the font size of the "Articles" button */
+      .dropbtn {
+        font-size: 30px;
+      } 
+      
+      /* Remove the white box around the Articles menu item */
+       .dropdown-content {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
   </head>
-  <body>
+  <body style="background-color: #ffeb78ce;">
+      <header>
+        <h1 style="color: #00539F; text-align: center;">Blue Hen Financial Advisor</h1>
+        <p style="text-align: center;">We are here to give assistance to those with financial questions in the Delaware area.</p>
+        <div class="topnav justify-content-around">
+          <a href="./index.html">Home</a>
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Articles
+              </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item text-dark" href="https://www.zayzoon.com/blog/alternatives-to-payday-loans-no-credit-check">Link 1</a>
+              <a class="dropdown-item text-dark" href= https://www.theguardian.com/us-news/2018/mar/05/fringe-banking-industry-more-likely-to-rate-health-as-poor-report-says">Link 2</a>
+              <a class="dropdown-item text-dark" href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#contact">Contact</a>
+          <a href="./aboutus.html">About Us</a>
+        </div>
+      </header>
+      <style>
+        #BlueHenLogo{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      </style>
+      <img id="BlueHenLogo" src="https://1000logos.net/wp-content/uploads/2022/01/Delaware-Blue-Hens-Logo-2009.png" style="width: 10%" >
+
     <h1>About Us</h1>
     <p>We are a team of financial advisors dedicated to providing expert advice and guidance to individuals and businesses in the Delaware area. Our mission is to help our clients achieve their financial goals by providing personalized solutions and recommendations tailored to their unique circumstances.</p>
     <p>At Blue Hen Financial Advisor, we believe in building long-term relationships with our clients based on trust, integrity, and transparency. Our team has a wealth of experience and expertise in a wide range of financial areas, including investments, retirement planning, tax strategies, and more.</p>
