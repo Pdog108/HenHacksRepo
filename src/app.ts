@@ -2,10 +2,27 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('HenHacks 2023!');
+const http = require('http');
+const fs = require('fs');
+
+const hostname = '127.0.0.1';
+
+const server = http.createServer((req, res) => {
+  fs.readFile('public/index.html', (err, data) => {
+    if (err) {
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'text/plain');
+      res.end('Internal Server Error');
+      return;
+    }
+
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end(data);
+  });
 });
 
-app.listen(port, () => {
-    return console.log(`Express is listening at http://localhost:${port}`);
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
+
