@@ -7,22 +7,13 @@ const fs = require('fs');
 
 const hostname = '127.0.0.1';
 
-const server = http.createServer((req, res) => {
-  fs.readFile('docs/index.html', (err, data) => {
-    if (err) {
-      res.statusCode = 500;
-      res.setHeader('Content-Type', 'text/plain');
-      res.end('Internal Server Error');
-      return;
-    }
+// Importing all the routes
+const indexroute=require("../docs/index.js")
+const aboutusroute=require("../docs/aboutus.js")
 
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end(data);
-  });
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-
+// Handling routes request
+app.use("/",indexroute)
+app.use("/aboutus.html",aboutusroute)
+app.listen((3000),()=>{
+    console.log("Server is Running")
+})
