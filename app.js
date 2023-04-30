@@ -5,13 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
-app.use(express_1.default.static(__dirname + '/public'));
 const port = 3000;
 const http = require('http');
 const fs = require('fs');
 const hostname = '127.0.0.1';
 const server = http.createServer((req, res) => {
-    fs.readFile('public/index.html', (err, data) => {
+    fs.readFile('docs/index.html', (err, data) => {
         if (err) {
             res.statusCode = 500;
             res.setHeader('Content-Type', 'text/plain');
