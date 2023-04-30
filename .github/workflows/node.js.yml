@@ -35,7 +35,7 @@ jobs:
                 value: ${{ steps.get-repo-values.outputs.url }}
           - run: npm ci
           - run: npm run test -- --coverage |& tee ./docs/test_report.txt
-          - run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./public/github.html
+          - run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./docs/github.html
           - run: npm run build --if-present
 
           - name: Deploy
