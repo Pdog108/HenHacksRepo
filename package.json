@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "build": "tsc && node dist/app.js",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "deploy": "npm run build && gh-pages -d dist"
@@ -20,6 +20,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "gh-pages": "^5.0.0"
   }
 }
